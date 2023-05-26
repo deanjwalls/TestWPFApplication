@@ -1,0 +1,21 @@
+﻿<Window x:Class="TestWPFApplication.EditRecordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestWPFApplication"
+        mc:Ignorable="d"
+        Title="EditRecordWindow" Height="188" Width="238">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Name: " HorizontalAlignment="Left" Margin="7,3,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name ="NameTextBox" HorizontalAlignment="Left" Margin="81,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Age: " HorizontalAlignment="Left" Margin="7,26,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name ="AgeTextBox" HorizontalAlignment="Left" Margin="81,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Post Code: " HorizontalAlignment="Left" Margin="7,49,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name ="PostCodeTextBox" HorizontalAlignment="Left" Margin="81,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Height: " HorizontalAlignment="Left" Margin="7,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name ="HeightTextBox" HorizontalAlignment="Left" Margin="81,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="114,99,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="162,99,0,0" VerticalAlignment="Top" Click="CloseButton_Click"/>
+    </Grid>
+</Window>
