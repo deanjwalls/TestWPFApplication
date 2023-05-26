@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestWPFApplication"
         mc:Ignorable="d"
-        Title="AddRecordWindow" Height="167" Width="245">
+        Title="AddRecordWindow" Height="175" Width="245">
     <Grid>
         <Label Content="Name: " HorizontalAlignment="Left" Margin="7,3,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name ="NameTextBox" HorizontalAlignment="Left" Margin="81,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -15,8 +15,9 @@
         <TextBox x:Name ="PostCodeTextBox" HorizontalAlignment="Left" Margin="81,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Height: " HorizontalAlignment="Left" Margin="7,72,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name ="HeightTextBox" HorizontalAlignment="Left" Margin="81,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="115,103,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Name ="SubmitButton" Content="Add" HorizontalAlignment="Left" Margin="115,103,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Button Content="Cancel" HorizontalAlignment="Left" Margin="162,103,0,0" VerticalAlignment="Top" Click="CloseButton_Click"/>
+        <TextBlock Name ="ErrorText" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="" TextElement.Foreground="Red" VerticalAlignment="Top" Width="100" Height="36" TextAlignment="Justify"/>
 
     </Grid>
 </Window>

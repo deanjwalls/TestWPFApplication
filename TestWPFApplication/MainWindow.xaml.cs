@@ -35,14 +35,14 @@ namespace TestWPFApplication
 
         private void AddRecordButton_Click(object sender, RoutedEventArgs e)
         {
-            AddRecordWindow addRecord = new AddRecordWindow(customerDB,this);
+            AddRecordWindow addRecord = new AddRecordWindow(customerDB,this,null);
             addRecord.ShowDialog();
         }
         private void EditRecordButton_Click(object sender, RoutedEventArgs e)
         {
             if (CurrentSelectedCustomer != null)
             {
-                EditRecordWindow editRecord = new EditRecordWindow(customerDB,this, CurrentSelectedCustomer);
+                AddRecordWindow editRecord = new AddRecordWindow(customerDB,this, CurrentSelectedCustomer);
                 editRecord.ShowDialog();
             }
             else
